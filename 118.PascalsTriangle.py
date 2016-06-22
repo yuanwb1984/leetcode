@@ -3,8 +3,17 @@
 Created on Tue Jun 21 12:48:55 2016
 
 @author: 06210
-"""
+[1],
+[1,1],
+[1,2,1],
+[1,3,3,1],
 
+  [0]+[1,3,3,  1],
++ [1,  3,3,1]+[0],
+------------------
+= [1,  4,6,4,  1]
+
+"""
 class Solution(object):
     def generate(self, numRows):
         """
@@ -26,5 +35,6 @@ class Solution(object):
             i = i + 1
             rows.append(row)
         return rows
+        
 n = Solution()
-print(n.generate(5))
+print(n.generate(50))
