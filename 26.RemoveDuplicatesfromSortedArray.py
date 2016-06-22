@@ -20,5 +20,7 @@ class Solution(object):
             else:
                 pool[nums[i]] = i
         return len(nums)
+#       return len(list(set(nums)))
+#上一句在leetcode不通过
 n = Solution()
-print(n.removeDuplicates([1,1,2,1,2]))
+print(n.removeDuplicates([]))
